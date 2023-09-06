@@ -13,11 +13,14 @@ media: real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
- a <- 10
- b <- 20
+ escreval ("Digite um valor para a")
+ leia (a)
+ 
+ escreval ("Digite um valor para b")
+ leia (b)
  
  media <- (a+b)/2
  
- escreval (media)
+ escreval ("A média é:", media)
 
 Fimalgoritmo
