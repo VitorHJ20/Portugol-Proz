@@ -1,0 +1,23 @@
+Algoritmo "caracter"
+// Disciplina   : [Operacoes matematicas]
+// Professor   : Marcelo
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Vitor Henrique de Jesus
+// Data atual  : 06/09/2023
+Var
+// Seção de Declarações das variáveis 
+nome, sobrenome: caracter
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Digite o seu primeiro nome:")
+leia (nome)
+
+escreval ("Digite seu sobrenome:")
+leia (sobrenome)
+
+escreval ("seu nome é ", nome, sobrenome)
+
+
+Fimalgoritmo
