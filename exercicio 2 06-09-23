@@ -1,0 +1,23 @@
+Algoritmo "Exercicio 2 Média 06-09-23"
+// Disciplina   : [Operacoes matematicas]
+// Professor   : Marcelo
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Vitor Henrique de Jesus
+// Data atual  : 06/09/2023
+Var
+// Seção de Declarações das variáveis 
+
+a,b: inteiro
+media: real
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ a <- 10
+ b <- 20
+ 
+ media <- (a+b)/2
+ 
+ escreval (media)
+
+Fimalgoritmo
