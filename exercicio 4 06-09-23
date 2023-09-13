@@ -5,31 +5,47 @@ Algoritmo "desconto"
 // Autor(a)    : Vitor Henrique de Jesus
 // Data atual  : 06/09/2023
 Var
-// Seção de Declarações das variáveis 
+// Seção de Declarações das variáveis
 
 produto: caracter
-valor, porcentagem: real
+valor, percentual: real
 val_desconto: real
 val_final: real
+cupom: caracter
 
 Inicio
+
 escreval ("Digite o nome do produto")
 leia (produto)
 escreval ("Digite o valor do produto")
 leia (valor)
-escreval ("Digite a % do desconto")
-leia (porcentagem)
+escreval ("Digite o nome do cupom de desconto")
+leia(cupom)
 
-val_desconto <- (porcentagem*valor)/100
+se cupom = "PROMLOJ1" entao
+    percentual <- 10
+   val_desconto <-(valor * 10)/100
+senao
+   se cupom = "PROMLOJ2" entao
+      cpercentual <- 15
+   senao
+       se cupom = "PROMLOJ3" entao
+         percentual <- 20
+       senao
+           se cupom <> " " entao
+             percentual <- 10
+           senao
+             percentual <- 0
+            fimse
+        fimse
+    fimse
+fimse
+val_desconto <- (valor * percentual)/100
 
-val_final <- (valor-val_desconto)
+val_final <- (valor - val_desconto)
 
-escreval("O produto"," ",produto," ","custa R$"," ",valor," ","mas você tem um desconto de"," ",porcentagem,"%")
-
-escreval("por este motivo, será abatido em sua compra o valor de R$",val_desconto)
-
-escreval("desta forma, você pagará apenas R$", val_final," ","pelo produto")
-
-
+escreval ("O produto"," ",produto," ","Custa R$",valor," ","mas você terá um desconto de ",percentual, "%")
+escreval ("Por esse motivo, será abatido em sua compra o valor de R$", val_desconto)
+escreval ("Desta forma, você pagará apenas R$",val_final," ", "pelo produto")
 
 Fimalgoritmo
