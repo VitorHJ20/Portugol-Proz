@@ -1,0 +1,27 @@
+Algoritmo "LoginPlataforma"
+Var
+        usuario, senha: caractere
+        tentativas: inteiro
+inicio
+    Escreval("Digite o usuário: ")
+    Leia(usuario)
+    enquanto usuario = "" faca
+        Escreval("Usuário não pode ficar vazio. Digite novamente: ")
+        Leia(usuario)
+    FimEnquanto
+    tentativas <- 0
+    Enquanto tentativas < 3 Faca
+        Escreval("Digite a senha: ")
+        Leia(senha)
+        Se(senha = "SENHA") Entao
+            Escreval("TUDO OK")
+        fimalgoritmo
+        Senao
+            Escreva("Senha Inválida. Tente novamente.")
+            tentativas <- tentativas + 1
+        FimSe
+    FimEnquanto
+    Se(tentativas = 3) Entao
+        Escreval("Excedido o número de tentativas.")
+    FimSe
+Fimalgoritmo
